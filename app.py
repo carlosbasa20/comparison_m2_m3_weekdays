@@ -1,8 +1,4 @@
-from pathlib import Path
-
-output = Path("/mnt/data/app_2_modelos.py")
-
-codigo = r'''import hmac
+import hmac
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -287,7 +283,3 @@ st.dataframe(
     tabla,
     use_container_width=True
 )
-'''
-
-output.write_text(codigo, encoding="utf-8")
-print(f"Archivo creado: {output}")
